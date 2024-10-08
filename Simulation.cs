@@ -68,7 +68,7 @@ class Simulation : Form{
     this.MATH_MARS = (float)(6.419 * Math.Pow(10, 23));
     this.MATH_MERCURY = (float)(3.302 * Math.Pow(10, 23));
     this.GRAVITY = (float)(6.6743 * Math.Pow(10, -11));
-    t.Interval = 1;
+    t.Interval = 10;
     t.Tick += new EventHandler(TimerEvent);
     this.ObjectList.Add(new Object(MATH_SUN, new Vector2(0, 0), new Vector2(0, 0)));
     this.ObjectList.Add(new Object(MATH_MERCURY, new Vector2(0, -46000), new Vector2(57900000000, 0)));
